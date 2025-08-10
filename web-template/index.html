@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Template</title>
+  <meta name="description" content="A minimal, modern web template." />
+  <link rel="icon" href="./assets/logo.svg" />
+  <link rel="preload" as="image" href="./assets/logo.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <noscript>This site works best with JavaScript enabled.</noscript>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Home">
+        <img src="./assets/logo.svg" alt="Logo" class="brand-logo" />
+        <span class="brand-name">WebTemplate</span>
+      </a>
+      <nav class="nav">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#start" class="nav-link">Get Started</a>
+        <button id="theme-toggle" class="button button-ghost" type="button" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="hero-title">A clean starting point for your next web project</h1>
+        <p class="hero-subtitle">Accessible, responsive, and fast by default — no build step required.</p>
+        <div class="hero-cta">
+          <a id="cta" href="#start" class="button">Use this template</a>
+          <a href="#features" class="button button-ghost">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Fast</h3>
+            <p>No frameworks or bundlers required to get going.</p>
+          </article>
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Mobile-first layout with sensible defaults.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Semantic HTML and high-contrast themes.</p>
+          </article>
+          <article class="card">
+            <h3>Customizable</h3>
+            <p>CSS variables make theming simple and predictable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Get Started</h2>
+        <ol class="steps">
+          <li>Open <code>index.html</code> in your browser, or</li>
+          <li>Serve this folder locally (see README).</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> WebTemplate</span>
+      <a href="#" class="footer-link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
